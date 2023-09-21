@@ -9,3 +9,5 @@ g++ http_conn.cpp server.cpp -o server
 apachebench测试
 
 目前并发数在1，2，3均可正常运行，高于四有问题，总会在最后一个或三个响应打转
+
+webbench测试无法通过，原因webbench的socket无法接收server传递过来的文件
